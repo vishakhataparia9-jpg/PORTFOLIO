@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects - Software Engineer">
+    <title>Projects | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body style="padding-top: 80px;">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="home.html" class="logo tg-logo">
+                <span style="font-weight:900; font-size:1.8rem; letter-spacing:-2px; line-height:1;">VT</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="about.html">About me</a></li>
+                <li><a href="education.html">Skills</a></li>
+                <li><a href="projects.html">Portfolio</a></li>
+                <li><a href="contact.html">CONTACT ME</a></li>
+            </ul>
+            <div class="hamburger">
+                <i data-lucide="menu"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="projects" class="projects section">
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        
+        <div class="projects-grid">
+            <div class="project-card glass-card slide-up">
+                <div class="project-img">
+                    <img src="assets/project-1.webp" alt="E-Commerce Platform">
+                    <div class="project-overlay">
+                        <a href="#" class="btn-icon" aria-label="View Live"><i data-lucide="external-link"></i></a>
+                        <a href="#" class="btn-icon" aria-label="View Source"><i data-lucide="github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <h3>Modern E-Commerce Platform</h3>
+                    <p>A full-stack e-commerce solution with real-time inventory management, secure Stripe payments, and an intuitive admin dashboard.</p>
+                </div>
+            </div>
+
+            <div class="project-card glass-card slide-up delay-1">
+                <div class="project-img">
+                    <img src="assets/project-2.webp" alt="Task Management App">
+                    <div class="project-overlay">
+                        <a href="#" class="btn-icon" aria-label="View Live"><i data-lucide="external-link"></i></a>
+                        <a href="#" class="btn-icon" aria-label="View Source"><i data-lucide="github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>HTML/CSS</span>
+                        <span>Firebase</span>
+                    </div>
+                    <h3>Collaborative Task Board</h3>
+                    <p>A Kanban-style task management application supporting real-time collaboration, drag-and-drop functionality, and team workspaces.</p>
+                </div>
+            </div>
+
+            <div class="project-card glass-card slide-up delay-2">
+                <div class="project-img">
+                    <img src="assets/project-3.webp" alt="Real Estate Finder">
+                    <div class="project-overlay">
+                        <a href="#" class="btn-icon" aria-label="View Live"><i data-lucide="external-link"></i></a>
+                        <a href="#" class="btn-icon" aria-label="View Source"><i data-lucide="github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span>Django</span>
+                        <span>PostgreSQL</span>
+                        <span>Bootstrap</span>
+                    </div>
+                    <h3>FlatFinder Properties</h3>
+                    <p>A property rental platform connecting owners and tenants with advanced filtering, map integration, and built-in messaging.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Your Name. Built with HTML, CSS, and JS.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
