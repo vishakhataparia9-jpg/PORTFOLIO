@@ -870,7 +870,7 @@ footer {
 }
 
 /* Navbar overrides for Home Page */
-.home-page .split-nav {
+.index-page .split-nav {
     position: absolute;
     top: 0;
     left: 0;
@@ -883,14 +883,14 @@ footer {
     padding: 2rem 0;
 }
 
-.home-page .logo.tg-logo {
+.index-page .logo.tg-logo {
     display: flex;
     align-items: center;
 }
 
 /* Override nav links color for the home page to white (except on mobile) */
 @media (min-width: 769px) {
-    .home-page .nav-links a:not(.btn-contact-pill) {
+    .index-page .nav-links a:not(.btn-contact-pill) {
         color: #fff;
         font-weight: 600;
         text-transform: uppercase;
@@ -898,11 +898,11 @@ footer {
         letter-spacing: 1px;
     }
 
-    .home-page .nav-links a:not(.btn-contact-pill):hover {
+    .index-page .nav-links a:not(.btn-contact-pill):hover {
         color: #ccc;
     }
     
-    .home-page .nav-links a:not(.btn-contact-pill)::after {
+    .index-page .nav-links a:not(.btn-contact-pill)::after {
         display: none; /* Remove underline effect */
     }
 }
@@ -1069,13 +1069,13 @@ footer {
     .massive-name {
         font-size: 3rem;
     }
-    .home-page .split-nav {
+    .index-page .split-nav {
         background: #f5f5f5;
     }
-    .home-page .logo svg path {
+    .index-page .logo svg path {
         fill: #000;
     }
-    .home-page .hamburger {
+    .index-page .hamburger {
         color: #000;
     }
 }
