@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set active link based on current URL path
     const currentPath = window.location.pathname;
     let currentPage = currentPath.split('/').pop();
-    if (currentPage === '' || currentPage === '/') currentPage = 'home.html';
+    if (currentPage === '' || currentPage === '/') currentPage = 'index.html';
 
     navLinksItems.forEach(a => {
         a.classList.remove('active');
